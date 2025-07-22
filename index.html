@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendario de Shows</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook&display=swap" rel="stylesheet">
+
+  <!-- Estilo CSS (carpeta: styles) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="fondo-inicio">
+
+  <div class="selector-container">
+    <h1 class="titulo-avril">take me closer to the good times</h1>
+
+    <select id="selector" class="boton-avril">
+      <option disabled selected>Seleccioná un showcito</option>
+    </select>
+  </div>
+
+  <div id="info-concierto" style="display:none;">
+    <h2 id="nombre"></h2>
+    <img id="imagen" src="" alt="" />
+    <p id="fecha"></p>
+    <div id="contador"></div>
+  </div>
+
+  <!-- Script JS (carpeta: script) -->
+  <script src="script/script.js"></script>
+</body>
+</html>

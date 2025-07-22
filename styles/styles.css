@@ -1,0 +1,129 @@
+/* Fondo estilo rock oscuro */
+body.fondo-inicio {
+  margin: 0;
+  padding: 0;
+  font-family:'UnifrakturCook';
+  color: white;
+  background-image: url('ALglitch.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed;
+  background-size: cover;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Contenedor del selector */
+.selector-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 20px; /* espacio entre elementos */
+}
+
+/* Título rockero */
+.titulo-avril {
+  font-family: 'UnifrakturCook';
+  font-size: 48px;
+  color: hsla(300, 96%, 38%, 0.904);
+  text-align: center;
+  text-shadow: 2px 2px 5px #fffafa;
+  margin-top: 80px;
+}
+
+.boton-avril {
+  font-family: 'UnifrakturCook';
+  font-size: 22px;
+  background-color: #c71585;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-avril:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff69b4;
+}
+
+/* Info del show */
+#info-concierto {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Imagen del show */
+#imagen {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.5);
+}
+
+/* Contador */
+#contador {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #ff5fe4bb;
+}
+
+/* Estilos para cada banda (colores y fondos únicos) */
+.estilo-bandaloschinos {
+  background-color: #111;
+  color: white;
+}
+
+.estilo-nd {
+  background-color: #111;
+  color: #d341d3;
+  font-family: 'Relay Black', sans-serif;
+}
+
+.estilo-gd { 
+  background-color: #111;
+  color: #1dad0ab6;
+}
+
+.estilo-mcr {
+  background-color: #111;
+  color: rgb(160, 2, 2);
+}
+
+.estilo-nd .titulo-avril {
+  font-family: 'Relay Black', sans-serif;
+  font-size: 3rem;
+}
+
+/* 🔽 RESPONSIVE: mejora para móviles y tablets */
+@media (max-width: 768px) {
+  .titulo-avril {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  .boton-avril {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  #imagen {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  #info-concierto {
+    padding: 10px;
+    margin: 30px auto;
+  }
+
+  #contador {
+    font-size: 1.5rem;
+  }
+}
